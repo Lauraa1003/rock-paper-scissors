@@ -1,7 +1,7 @@
 let playerScore = 0
 let computerScore = 0
     
-    // create a function that returns random elements
+    // computer chooses random element from array
     function computerPlay() {
         const choices = ["rock", "paper", "scissors"];
         let random = choices[Math.floor(Math.random() * choices.length)];
