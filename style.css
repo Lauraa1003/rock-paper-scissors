@@ -1,1 +1,291 @@
+body {
+    height: 100%;
+    background-color: rgb(11, 9, 27);
+}
 
+
+
+
+#flex1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header{
+  margin-top: 25px;
+  display: inline-block;
+  padding: 0px 20px;
+  font-size: 20px;
+  font-family:'Press Start 2P', cursive;
+  -webkit-box-reflect: below -15px linear-gradient(transparent, #0001);
+  line-height: 0.7em;
+  color: rgba(255, 246, 228, 0.753);   
+      text-shadow: 0px 0px 10px rgb(195, 0, 255),
+               0px 0px 20px rgb(255, 0, 255),
+               0px 0px 40px rgb(234, 0, 255),
+               0px 0px 80px rgb(255, 0, 255),
+               0px 0px 160px rgba(255, 0, 255, 0.281);   
+}
+
+.far.fa-hand-rock:hover{
+  transform: scale(1.4);
+  
+}
+.far.fa-hand-paper:hover{
+  transform:scale(1.4);
+}
+
+.far.fa-hand-scissors:hover{
+  transform: scale(1.4);
+}
+
+.game{
+  margin: 40px 20px 20px 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+}
+.score-board{
+  
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+}
+.score{
+  margin: 40px 20px 10px 10px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+div, h1{
+    animation: moveInBottom 3s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+p{
+  color: rgba(255, 246, 228, 0.753);   
+  text-shadow: 0px 0px 10px rgb(174, 15, 218),
+           0px 0px 20px rgb(230, 16, 212),
+           0px 0px 40px rgba(222, 217, 223, 0.205),
+           0px 0px 80px rgba(182, 182, 201, 0),
+           0px 0px 160px rgba(85, 71, 71, 0.103);  
+  font-family:'Press Start 2P', cursive;
+}
+
+#computer-score, #player-score{
+  margin: 10px;
+}
+
+
+#computer-choice, #player-choice{
+  font-size: 80px;
+}
+
+
+#round-result{
+  color: rgba(255, 246, 228, 0.753);   
+  text-shadow: 0px 0px 10px rgba(210, 195, 214, 0.349),
+           0px 0px 20px rgb(182, 182, 182),
+           0px 0px 40px rgba(222, 217, 223, 0.205),
+           0px 0px 80px rgba(182, 182, 201, 0),
+           0px 0px 160px rgba(85, 71, 71, 0.103);   
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Press Start 2P', cursive;
+  color: white;
+  font-size: 17px;
+  margin-top: 100px;
+  }
+
+
+#choices {
+    cursor: pointer;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    margin-top: 83px;
+}
+
+.game{
+  margin: 40px 20px 20px 20px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+#score-board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  
+}
+.score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.far.fa-hand-rock {
+    min-height: 100%;
+    font-size: 8rem;
+    padding: 50px;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+    
+  
+  }
+  
+  /*-- Animation Keyframes --*/
+  
+  
+  @keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
+
+  .far.fa-hand-paper {
+    min-height: 100%;
+    padding: 50px;
+    font-size: 8rem;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon1 .10s ease-in-out infinite alternate;
+    
+  
+  }
+  
+  /*-- Animation Keyframes --*/
+  
+  
+  @keyframes neon1 {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(255, 24, 24, 0.52),
+      0 0 21px rgba(255, 30, 30, 0.92),
+      0 0 34px rgba(255, 41, 36, 0.78),
+      0 0 54px rgba(255, 22, 22,0.92);
+
+      
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(255, 30, 30, 0.58),
+      0 0 22px rgba(255, 44, 30, 0.84),
+      0 0 38px rgba(255, 30, 30, 0.88),
+      0 0 60px rgb(255, 30, 30, 1);
+    }
+  }
+
+
+  .far.fa-hand-scissors {
+    min-height: 100%;
+    font-size: 8rem;
+    padding: 50px;
+    line-height: 1;
+    color: #c6e2ff;
+    animation: neon2 .10s ease-in-out infinite alternate;
+    
+  
+  }
+  
+  /*-- Animation Keyframes --*/
+  
+  
+  @keyframes neon2 {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(242, 238, 30, 0.52),
+      0 0 21px rgba(238, 242, 30, 0.92),
+      0 0 34px rgba(238, 242, 30, 0.78),
+      0 0 54px rgba(242, 221, 30, 0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(228, 242, 30, 0.58),
+      0 0 22px rgba(242, 221, 30, 0.84),
+      0 0 38px rgba(242, 203, 30, 0.88),
+      0 0 60px rgb(238, 242, 30);
+    }
+  }
+
+
+  footer{
+    color: rgba(255, 255, 255, 0.829);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+    gap: 1px;
+  }
+  .fab.fa-github {
+    margin-left: 5px;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
+   
+   

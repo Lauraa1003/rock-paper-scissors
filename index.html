@@ -3,11 +3,62 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/13dd61c5f0.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+        <link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet">
         <title>Rock Paper Scissors</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
     <body>
-       <script src="script.js"></script>
        
+        <header id="flex1">
+            <h1>Rock Paper Scissors</h1>
+        </header>
+        
+           
+         
+
+        <div class="game">
+        <div class="score-board">
+            <div class="score">
+                <p> YOU:<bold id="player-score">0</bold></p>
+                <i id ="player-choice"></i>
+            </div>
+            <div class="score">
+                <p>COMPUTER:<bold id="computer-score">0</p>
+                <i id="computer-choice"></i>
+            </div>
+        </div>
+        </div>
+
+        <audio id="sound"><source src="mixkit-retro-arcade-casino-notification-211.wav" /></audio>
+        <audio id="lose"><source src="sfx-defeat3.mp3" /></audio>
+        <audio id="win"><source src="mixkit-arcade-video-game-scoring-presentation-274.wav"/></audio>
+        <audio id="play"><source src="mixkit-game-level-music-689.wav"/></audio>
+       
+        <div>
+            <p id="round-result"></p>
+        </div>
+        
+        
+        
+        
+        <div id="choices">
+        <i class="far fa-hand-rock" id="rock-button"></i>
+        <i class="far fa-hand-paper" id="paper-button"></i>
+        <i class="far fa-hand-scissors" id="scissors-button"></i>
+        </div>
+
+        
+       
+       <footer>
+        Copyright © 2021 Laura<a href="https://github.com/Lauraa1003" target="_blank"><i class="fab fa-github"></i></a>
+       </footer>
+
+       <script src="script.js"></script>
     </body>
 </html>
