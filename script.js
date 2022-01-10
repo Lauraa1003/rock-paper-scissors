@@ -108,7 +108,7 @@ const scissorsBtn = document.querySelector('#scissors-button');
         })
         
     
-
+// sound effects
  const mySound = document.getElementById("sound");  
 
         rockBtn.addEventListener("click", function(){
