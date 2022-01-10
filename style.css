@@ -276,6 +276,13 @@ p{
     justify-content: center;
     margin-top: 45px;
     gap: 1px;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+          
+            
+    
   }
   .fab.fa-github {
     margin-left: 5px;
