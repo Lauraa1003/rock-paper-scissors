@@ -84,7 +84,9 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 
-    function showGameResults() {
+// hide game container and open bottom container
+
+function showGameResults() {
         let gameContainer = document.querySelector('.game1');
         let bottomContainer = document.getElementById('bottomcontainer');
         gameContainer.style.display = 'none';
@@ -92,11 +94,11 @@ function playRound(playerSelection, computerSelection) {
     }
 
 
- const loseSound =document.getElementById("lose");   
- const winSound = document.getElementById("win");  
- const div = document.createElement('div');  
- const container = document.querySelector('.bottomcontainer');
- const content = document.createElement('div');
+const loseSound =document.getElementById("lose");   
+const winSound = document.getElementById("win");  
+const div = document.createElement('div');  
+const container = document.querySelector('.bottomcontainer');
+const content = document.createElement('div');
  
 
 
@@ -105,17 +107,16 @@ function resultPopup(){
         if(playerScore == 5){
             showGameResults()
             content.classList.add('content');
-            content.textContent = `Yayyy you win!\nYour score is: ${playerScore}\nand the computer score is: ${computerScore}!`;
+            content.textContent = `Yayyy you win!\n \n \n Your score is:${playerScore}\n \n  and the computer score is:${computerScore}`;
             container.appendChild(content);
             if (!winSound) return;
             winSound.currentTime = 0;
             winSound.play(); 
-           
         }
         else if (computerScore == 5){
             showGameResults()
             content.classList.add('content');
-            content.textContent = `Too bad, the computer wins this time!\nThe computer score is:${computerScore}\nand your score is:${playerScore}!`;
+            content.textContent = `Too bad, the computer wins this time!\n \n \n The computer score is:${computerScore}\n \n and your score is:${playerScore}`;
             container.appendChild(content);
             if (!loseSound) return;
             loseSound.currentTime = 0;
@@ -123,6 +124,7 @@ function resultPopup(){
         }
     }
     
+// assign game icons to player/computer choice
 
 const rockBtn = document.querySelector('#rock-button');
 const paperBtn = document.querySelector('#paper-button');
@@ -140,7 +142,7 @@ const scissorsBtn = document.querySelector('#scissors-button');
         
     
 // sound effects
- const mySound = document.getElementById("sound");  
+const mySound = document.getElementById("sound");  
 
         rockBtn.addEventListener("click", function(){
             if (!mySound) return;
@@ -156,6 +158,8 @@ const scissorsBtn = document.querySelector('#scissors-button');
             if (!mySound) return;
             mySound.currentTime = 0;
             mySound.play(); });         
+
+// restart game           
 
 document.getElementById("restart").addEventListener("click", restartGame);
 
