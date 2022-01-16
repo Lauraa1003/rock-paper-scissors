@@ -401,16 +401,16 @@ p{
          0px 0px 160px rgba(85, 71, 71, 0.103);     
     width: 100%;
     height: 200%;
-    padding-top: 300px;
+    padding-top: 250px;
     text-align: center;
     font-size: 20px;
     background-image: linear-gradient(to bottom, #0b091b, #13102a, #1d1239, #2b1147, #3d0c52);
   }
-  /* fix : buttons moves when being clicked */
+ 
   #restart {
+    position:absolute;
     cursor: pointer;
     margin: 0;
-    position: absolute;
     top: 70%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -422,6 +422,7 @@ p{
     text-transform: uppercase;
     font-weight: bold;
     overflow: hidden;
+    float: left;
     transition: 0.1s;
     box-shadow: 0 0 5px #b0a4b3,
     0 0 25px #a28aa8,
@@ -445,11 +446,7 @@ p{
 
 
 
- #restart:active {
-  box-shadow: none;
-  border-bottom-width: 2px;
-  transform: translate(3px, 4px);
-}
+
 
 
   .fab.fa-github {
