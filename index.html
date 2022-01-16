@@ -13,16 +13,22 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
-    <body>
-       
+    <body> 
+        <div class="container" id="startcontainer">
+            <p class="startPara"> Are you ready to play Rock-Paper-Scissors? <br> <span class="secondPara">The first player that gets 5 points wins the game.</span></p>
+            <button id="startbutton">Start Game</button>
+        </div>
+
+        <div class="game1">
+      
         <header id="flex1">
             <h1>Rock Paper Scissors</h1>
         </header>
         
-           
-         
-
-        <div class="game">
+       
+       
+        
+        <div class="game">  
         <div class="score-board">
             <div class="score">
                 <p> YOU:<bold id="player-score">0</bold></p>
@@ -34,7 +40,10 @@
             </div>
         </div>
         </div>
+      
+        
 
+        
         <audio id="sound"><source src="mixkitt-retro-arcade-casino-notification-211.wav" /></audio>
         <audio id="lose"><source src="sfx-defeat2.mp3" /></audio>
         <audio id="win"><source src="mixkitt-arcade-video-game-scoring-presentation-274.wav"/></audio>
@@ -52,13 +61,18 @@
         <i class="far fa-hand-paper" id="paper-button"></i>
         <i class="far fa-hand-scissors" id="scissors-button"></i>
         </div>
-
+  
         
-       
+       </div>
        <footer>
         Copyright © 2021 Laura<a href="https://github.com/Lauraa1003"target="_blank"><i class="fab fa-github"></i></a>
        </footer>
 
+       <div id="bottomcontainer" class="bottomcontainer">
+           <button id="restart">Restart game</button>
+        </div>
+    
        <script src="script.js"></script>
+       
     </body>
 </html>
